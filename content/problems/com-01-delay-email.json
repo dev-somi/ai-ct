@@ -1,0 +1,24 @@
+{
+  "id": "com-01-delay-email",
+  "type": "communication",
+  "title": "해외 고객사 대상 납기 지연 통보 이메일 (영문)",
+  "industry": "제조",
+  "scenario": {
+    "background": "귀하는 반도체 장비 부품사 H사의 글로벌 영업 담당입니다. 핵심 고객인 미국 N사에 납품할 정밀 밸브 3,000개 중 1,200개가 협력사 원자재 품질 문제로 3주 지연될 예정입니다. N사는 다음 달 신규 라인 가동을 앞두고 있으며, 최근 경쟁사도 N사에 공급 제안을 하고 있습니다.",
+    "task": "주어진 AI Tool을 활용하여, N사 구매 담당 이사에게 보낼 납기 지연 통보 및 대응 방안 이메일을 영문으로 작성해 주세요.",
+    "requirements": [
+      "지연 사실과 원인을 투명하게 전달하되 신뢰를 유지하는 톤",
+      "고객 영향을 최소화하는 구체적 대안 2개 이상 제시",
+      "향후 재발 방지 조치와 후속 커뮤니케이션 일정",
+      "수신자가 즉시 의사결정할 수 있는 명확한 요청 사항(Call to Action)"
+    ]
+  },
+  "references": "### [자료 1] 고객 메일 (지난주 수신)\n> Hi Min-jun,\n> Just a reminder that our Line 4 ramp-up starts on Nov 18. We are counting on the full shipment of 3,000 valves by Nov 4. Please let me know ASAP if there's any risk.\n> Best, Sarah Collins, Director of Procurement, N Corp.\n\n### [자료 2] 내부 사실관계\n- 정상 출하 가능: 1,800개 (11/4 예정대로)\n- 지연 물량: 1,200개 → 11/25 출하 가능 (원자재 재입고 후)\n- 항공 운송 전환 시 7일 단축 가능 (추가 비용 약 USD 14,000, 당사 부담 가능)\n- 대체 원자재(일본산) 사용 시 11/15 출하 가능하나 고객 사전 승인(PCN) 필요\n- 협력사 품질 문제는 입고 검사에서 발견됨 (당사 검사 체계는 정상 작동)",
+  "submitFormat": { "maxChars": 2500, "language": "en", "note": "영문 이메일, 제목(Subject) 포함" },
+  "timeLimitMin": 25,
+  "rubricHints": [
+    "나쁜 소식을 앞부분에 명확히, 사과는 간결하게",
+    "항공운송(당사 부담)·대체 원자재 PCN 등 선택지를 일정과 함께 제시",
+    "Line 4 ramp-up 일정(11/18) 영향 분석과 회신 기한이 있는 CTA"
+  ]
+}

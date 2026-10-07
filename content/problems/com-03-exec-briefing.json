@@ -1,0 +1,24 @@
+{
+  "id": "com-03-exec-briefing",
+  "type": "communication",
+  "title": "해외 법인 이슈 경영진 보고 (영문 자료 → 국문 보고)",
+  "industry": "에너지",
+  "scenario": {
+    "background": "E사는 미국 텍사스에 ESS(에너지저장장치) 프로젝트 법인을 두고 있습니다. 현지 법인장이 보낸 영문 이슈 리포트에 따르면, 전력망 연계 승인 지연과 현지 규제 변경으로 상업운전(COD)이 늦어질 위험이 있습니다. 귀하는 본사 글로벌사업팀 소속으로, 내일 아침 CEO 보고를 위한 1페이지 요약 보고서를 작성해야 합니다.",
+    "task": "주어진 AI Tool을 활용하여 영문 이슈 리포트를 분석하고, CEO가 의사결정할 수 있도록 국문 보고서를 작성해 주세요.",
+    "requirements": [
+      "핵심 이슈와 사업 영향(일정·재무)을 결론부터 요약",
+      "선택 가능한 대응 옵션 비교(장단점·비용)",
+      "본사 차원에서 필요한 의사결정 사항 명시",
+      "경영진 보고서에 맞는 간결한 개조식 문체"
+    ]
+  },
+  "references": "### [자료] Issue Report from Texas Project Co. (원문)\n> **Subject: Interconnection delay & regulatory risk – Project Bluebonnet (200MW/400MWh)**\n> 1. ERCOT interconnection study results were delayed by ~4 months due to queue backlog. Our original COD of June next year is now likely to slip to October.\n> 2. A new state bill (if passed in Q1) would require additional fire-safety certification for BESS sites over 100MW, adding an estimated $3.2M and 6–8 weeks.\n> 3. Each month of COD delay costs approx. $1.1M in lost revenue, and our offtake agreement with the utility has a liquidated damages clause of $250K/month after August.\n> 4. Options: (A) Proceed as planned and absorb delays; (B) Pay $1.8M for an expedited study via a third-party consultant – may recover ~2 months (not guaranteed); (C) Split the project into a 100MW Phase 1 to avoid the new certification and reach COD by August.\n> 5. We need HQ decision by end of this month to lock the EPC contract schedule.\n> – David Kim, CEO, Texas Project Co.",
+  "submitFormat": { "maxChars": 1500, "language": "ko" },
+  "timeLimitMin": 20,
+  "rubricHints": [
+    "결론 우선(BLUF): COD 4개월 지연 위험, 의사결정 기한(이번 달 말)",
+    "옵션 A/B/C 비용 영향 계산(지연 매출손실·LD·인증비) 비교",
+    "추천안과 근거 제시, 영문 용어(COD, LD, EPC)의 적절한 설명"
+  ]
+}
